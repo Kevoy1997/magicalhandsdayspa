@@ -907,12 +907,33 @@
       flex-shrink: 0;
     }
 
-    /* ─── SimplyBook.me Widget Area ─── */
+    /* ─── Booking Widget Card ─── */
     .simplybook-widget {
       border-radius: var(--radius-lg);
       overflow: hidden;
       box-shadow: var(--shadow-lg);
-      background: var(--white);
+      background: linear-gradient(160deg, var(--cream) 0%, #FFFDF9 100%);
+      max-width: 480px;
+      margin: 0 auto;
+      position: relative;
+      border: 1px solid var(--gold-light);
+    }
+
+    .simplybook-widget::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 64px;
+      height: 4px;
+      background: var(--gold);
+      border-radius: 0 0 4px 4px;
+    }
+
+    .simplybook-widget p {
+      color: var(--text-dark);
+      font-size: 16px;
     }
 
     .simplybook-widget iframe {
@@ -920,6 +941,40 @@
       height: 620px;
       border: none;
       display: block;
+    }
+
+    .setmore-book-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%) !important;
+      color: var(--green-deep) !important;
+      border: none !important;
+      padding: 16px 40px !important;
+      font-family: 'Inter', sans-serif !important;
+      font-size: 15px !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.5px;
+      border-radius: 50px !important;
+      cursor: pointer;
+      box-shadow: 0 8px 24px rgba(201, 169, 110, 0.45);
+      transition: var(--transition);
+      animation: floatBookBtn 3s ease-in-out infinite;
+    }
+
+    .setmore-book-btn:hover {
+      animation-play-state: paused;
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 12px 32px rgba(201, 169, 110, 0.6);
+    }
+
+    @keyframes floatBookBtn {
+      0%, 100% { transform: translateY(0); }
+      50%      { transform: translateY(-6px); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .setmore-book-btn { animation: none; }
     }
 
     /* ─── Contact ─── */
