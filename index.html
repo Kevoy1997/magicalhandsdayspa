@@ -669,25 +669,31 @@
                payment. The booking plugin currently in use does not. -->
         </div>
 
-        <!--
-          TODO — BOOKING WIDGET
-          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-          This is a placeholder. The original mockup pointed at a SimplyBook.me
-          iframe that was never actually set up — it will not work as-is.
-          Find out which booking plugin is currently active in wp-admin
-          before deciding what goes here:
-            - If it's a vendor-hosted tool (SimplyBook.me, Square Appointments,
-              Fresha, Cal.com): replace this block with that tool's iframe/script
-              embed code. Works identically on static hosting.
-            - If it's a WordPress-native plugin (Amelia, Bookly, etc.): it will
-              NOT survive the move off WordPress. Export the service list
-              (names, durations, prices) before the old site goes away, and
-              set up a vendor-hosted replacement here instead.
-          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-        -->
+        <!-- Setmore booking widget. Confirm the currency set in Setmore's own
+             account settings is USD before treating this as fully correct —
+             Setmore lets currency be chosen independently of country, unlike
+             Fresha, but it's a setting to verify, not assume. -->
         <div class="simplybook-widget" style="display:flex; align-items:center; justify-content:center; min-height:420px; padding:32px; text-align:center; flex-direction:column; gap:16px;">
-          <p style="color: var(--text-muted); font-size: 15px;">Online booking is being set up here.<br>In the meantime, call or message us to book your appointment.</p>
-          <a href="tel:+18769956815" class="btn btn-dark">Call +1 (876) 995-6815</a>
+          <p style="color: var(--text-muted); font-size: 15px;">Reserve your appointment online in just a few clicks.</p>
+          <script id="anywhere_book_now_script" src="https://assets.setmore.com/integration/book-now/live/v1/anywhere-book-now.js"></script>
+          <button
+            id="Anywhere_button_iframe"
+            class="anywhere-book-now-button"
+            style="
+              background-color: #000;
+              color: #fff;
+              border: none;
+              padding: 12px 18px;
+              font-size: 14px;
+              font-weight: 600;
+              border-radius: 6px;
+              cursor: pointer;
+            "
+            data-booking-url="https://kevoyvbqx.setmore.com"
+            data-new-tab="false"
+          >
+            Book now
+          </button>
         </div>
 
       </div>
