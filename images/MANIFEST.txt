@@ -1,0 +1,17 @@
+Images currently hotlinked from the live WordPress site.
+These must be downloaded and placed in this /images folder, with the
+matching src= paths in index.html updated, BEFORE the Hostinger hosting
+plan is cancelled — once that server is gone, every image below 404s.
+
+https://magicalhandsdayspa.com/wp-content/uploads/2022/01/woman-young-massage-3701712-768x474.jpg  ->  images/woman-young-massage-3701712-768x474.jpg
+https://magicalhandsdayspa.com/wp-content/uploads/2022/02/Denise-2.jpg  ->  images/Denise-2.jpg
+https://magicalhandsdayspa.com/wp-content/uploads/2022/02/GetPaidStock.com-620c9fb698c3c-768x486.jpg  ->  images/GetPaidStock.com-620c9fb698c3c-768x486.jpg
+https://magicalhandsdayspa.com/wp-content/uploads/2022/02/GetPaidStock.com-620cb34566e87.jpg  ->  images/GetPaidStock.com-620cb34566e87.jpg
+https://magicalhandsdayspa.com/wp-content/uploads/2022/02/GetPaidStock.com-6216d9d127b63-768x486.jpg  ->  images/GetPaidStock.com-6216d9d127b63-768x486.jpg
+https://magicalhandsdayspa.com/wp-content/uploads/2022/02/Omar.jpg  ->  images/Omar.jpg
+https://magicalhandsdayspa.com/wp-content/uploads/2022/03/touching-young-peaceful-beautiful-therapy-1-768x512.jpg  ->  images/touching-young-peaceful-beautiful-therapy-1-768x512.jpg
+https://magicalhandsdayspa.com/wp-content/uploads/2022/03/woman-with-dreadlocks-1-768x512.jpg  ->  images/woman-with-dreadlocks-1-768x512.jpg
+https://magicalhandsdayspa.com/wp-content/uploads/2024/12/abstract-portrait-man-vaporwave-style-1-768x512.jpg  ->  images/abstract-portrait-man-vaporwave-style-1-768x512.jpg
+https://magicalhandsdayspa.com/wp-content/uploads/2024/12/pexels-vlada-karpovich-6634889-1-768x512.jpg  ->  images/pexels-vlada-karpovich-6634889-1-768x512.jpg
+https://magicalhandsdayspa.com/wp-content/uploads/2024/12/stones-candle-plants-1-768x512.jpg  ->  images/stones-candle-plants-1-768x512.jpg
+https://magicalhandsdayspa.com/wp-content/uploads/2024/12/woman-receiving-manicure-from-woman-gloves-mask-beauty-salon-daytime-1-768x525.jpg  ->  images/woman-receiving-manicure-from-woman-gloves-mask-beauty-salon-daytime-1-768x525.jpg
