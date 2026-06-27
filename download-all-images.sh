@@ -1,0 +1,33 @@
+#!/bin/bash
+# Run from inside your magical-hands-website folder.
+# Downloads all 20 images — safe to re-run, just overwrites existing ones.
+
+echo "Downloading all images..."
+
+# ── Original 12 ──
+curl -sL "https://magicalhandsdayspa.com/wp-content/uploads/2022/01/woman-young-massage-3701712-768x474.jpg" -o "images/woman-young-massage-3701712-768x474.jpg"
+curl -sL "https://magicalhandsdayspa.com/wp-content/uploads/2022/02/Denise-2.jpg" -o "images/Denise-2.jpg"
+curl -sL "https://magicalhandsdayspa.com/wp-content/uploads/2022/02/GetPaidStock.com-620c9fb698c3c-768x486.jpg" -o "images/GetPaidStock.com-620c9fb698c3c-768x486.jpg"
+curl -sL "https://magicalhandsdayspa.com/wp-content/uploads/2022/02/GetPaidStock.com-620cb34566e87.jpg" -o "images/GetPaidStock.com-620cb34566e87.jpg"
+curl -sL "https://magicalhandsdayspa.com/wp-content/uploads/2022/02/GetPaidStock.com-6216d9d127b63-768x486.jpg" -o "images/GetPaidStock.com-6216d9d127b63-768x486.jpg"
+curl -sL "https://magicalhandsdayspa.com/wp-content/uploads/2022/02/Omar.jpg" -o "images/Omar.jpg"
+curl -sL "https://magicalhandsdayspa.com/wp-content/uploads/2022/03/touching-young-peaceful-beautiful-therapy-1-768x512.jpg" -o "images/touching-young-peaceful-beautiful-therapy-1-768x512.jpg"
+curl -sL "https://magicalhandsdayspa.com/wp-content/uploads/2022/03/woman-with-dreadlocks-1-768x512.jpg" -o "images/woman-with-dreadlocks-1-768x512.jpg"
+curl -sL "https://magicalhandsdayspa.com/wp-content/uploads/2024/12/abstract-portrait-man-vaporwave-style-1-768x512.jpg" -o "images/abstract-portrait-man-vaporwave-style-1-768x512.jpg"
+curl -sL "https://magicalhandsdayspa.com/wp-content/uploads/2024/12/pexels-vlada-karpovich-6634889-1-768x512.jpg" -o "images/pexels-vlada-karpovich-6634889-1-768x512.jpg"
+curl -sL "https://magicalhandsdayspa.com/wp-content/uploads/2024/12/stones-candle-plants-1-768x512.jpg" -o "images/stones-candle-plants-1-768x512.jpg"
+curl -sL "https://magicalhandsdayspa.com/wp-content/uploads/2024/12/woman-receiving-manicure-from-woman-gloves-mask-beauty-salon-daytime-1-768x525.jpg" -o "images/woman-receiving-manicure-from-woman-gloves-mask-beauty-salon-daytime-1-768x525.jpg"
+
+# ── 8 New images (missing services) ──
+curl -sL "https://magicalhandsdayspa.com/wp-content/uploads/2022/02/GetPaidStock.com-620ca154befe1-768x513.jpg" -o "images/GetPaidStock.com-620ca154befe1-768x513.jpg"
+curl -sL "https://magicalhandsdayspa.com/wp-content/uploads/2022/02/woman-gb7c2ff866_1920-1.jpg" -o "images/woman-gb7c2ff866_1920-1.jpg"
+curl -sL "https://magicalhandsdayspa.com/wp-content/uploads/2022/02/GetPaidStock.com-620ca0c4bd36b-768x484.jpg" -o "images/GetPaidStock.com-620ca0c4bd36b-768x484.jpg"
+curl -sL "https://magicalhandsdayspa.com/wp-content/uploads/2022/02/GetPaidStock.com-620ca2622820a-768x486.jpg" -o "images/GetPaidStock.com-620ca2622820a-768x486.jpg"
+curl -sL "https://magicalhandsdayspa.com/wp-content/uploads/2022/02/happy-african-american-woman-enjoying-hot-stone-ma-2021-08-28-23-04-35-utc-768x463.jpg" -o "images/happy-african-american-woman-enjoying-hot-stone-ma-2021-08-28-23-04-35-utc-768x463.jpg"
+curl -sL "https://magicalhandsdayspa.com/wp-content/uploads/2022/02/facial-2-768x512.jpg" -o "images/facial-2-768x512.jpg"
+curl -sL "https://magicalhandsdayspa.com/wp-content/uploads/2022/02/manicure-treatment-at-luxury-spa-2021-08-26-15-34-42-utc-768x510.jpg" -o "images/manicure-treatment-at-luxury-spa-2021-08-26-15-34-42-utc-768x510.jpg"
+curl -sL "https://magicalhandsdayspa.com/wp-content/uploads/2022/02/female-pedicure-specialist-cutting-cuticle-on-male-2021-10-11-23-15-46-utc-768x512.jpg" -o "images/female-pedicure-specialist-cutting-cuticle-on-male-2021-10-11-23-15-46-utc-768x512.jpg"
+
+echo ""
+echo "Done. Checking file sizes (anything near 0 bytes failed):"
+ls -lh images/*.jpg images/*.jpeg 2>/dev/null
